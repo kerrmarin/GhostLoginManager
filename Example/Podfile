@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'GhostLoginManager_Example', :exclusive => true do
+  pod "GhostLoginManager", :path => "../"
+end
+
+target 'GhostLoginManager_Tests', :exclusive => true do
+  pod "GhostLoginManager", :path => "../"
+
+  pod 'Quick', '~> 0.8.0'
+  pod 'Nimble', '3.0.0'
+end
