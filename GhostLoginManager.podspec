@@ -19,12 +19,11 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/GhostLoginManager"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/kerrmarin/GhostLoginManager"
   s.license          = 'MIT'
   s.author           = { "Kerr Marin Miller" => "kerr@kerrmarin.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/GhostLoginManager.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/kerrmarin/GhostLoginManager.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/kerrmarin'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
@@ -34,7 +33,5 @@ Pod::Spec.new do |s|
     'GhostLoginManager' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Alamofire', '~> 3.0'
 end

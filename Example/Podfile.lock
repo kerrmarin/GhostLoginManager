@@ -1,0 +1,17 @@
+PODS:
+  - Alamofire (3.1.4)
+  - GhostLoginManager (0.1.0):
+    - Alamofire (~> 3.0)
+
+DEPENDENCIES:
+  - GhostLoginManager (from `../`)
+
+EXTERNAL SOURCES:
+  GhostLoginManager:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Alamofire: fbc829692f351fa1d8a31dd75fd7f7f56fea31fb
+  GhostLoginManager: fc0e85c3e2aa0d589520ae3263281f84ed59c9ef
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,6 @@
+framework module GhostLoginManager {
+  umbrella header "GhostLoginManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
