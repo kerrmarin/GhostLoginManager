@@ -15,10 +15,10 @@ To login to a Ghost blog use the `GhostLoginClient`, then create an instance of 
 self.client = GhostLoginClient(manager: manager, parser: parser)
 self.client!.loginWithUsername(email, password: password) { (token, error) -> Void in
     guard error == nil else {
-        self.resultsTextView!.text = log + "\nError: \(error!.localizedDescription)"
+        //Error
         return
     }                                                                         
-    self.resultsTextView!.text = log + "\nLOGGED IN!"                                                                                      
+    //Token is valid here
 }
 
 ```
