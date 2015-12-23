@@ -10,55 +10,55 @@
 		03F494989CC1A8857B68A317D5D6860F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE82608C8C2A46981A07D7E422BEB45 /* Response.swift */; };
 		0681ADC8BAE2C3185F13487BAAB4D9DD /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948996616B0A38BD6FE8C4CB309CC964 /* Upload.swift */; };
 		097FFC924B6AC25643B340C098DBCC15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFCE8A3DC08536A2B19894C1FF3E86D /* Foundation.framework */; };
-		1FC3315C137CDB350AE63B863B0089DF /* GhostLoginTokenJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453D26B352163A611CE2AC91CFFBB9D /* GhostLoginTokenJSONParser.swift */; };
+		141F052955BC305D05ADF40F9948ED1E /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD806FF9FA90CB6BE6CA3AEF2A0615E6 /* Error.swift */; };
+		1D125712306DBA6A4E7DC894BE99E702 /* GhostLoginClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8126F9E5B8182393F3A7C6FEF1FC05 /* GhostLoginClient.swift */; };
+		210500611BB2B2F33053A99CBA3FD89A /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5AFCE0FAB986C3CB3DD8FC460D5EFA /* Token.swift */; };
 		210D43512D7D5CCC8602AD4DADC421ED /* Pods-GhostLoginManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E6CBF64AB412DD2466282231B3471C2 /* Pods-GhostLoginManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C2546656D0A7640B13985362069BFC0 /* GhostLoginManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BA1F49FA8BBC5398226E5B00BA25B /* GhostLoginManager-dummy.m */; };
 		2C5450AC69398958CF6F7539EF7D99E5 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FC4583A4BD15196E6859EA5E990AD3F /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2DEA5A07F22777C650E73E5FE0AB38D9 /* GhostLoginToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B63D2E35A76D4705B10C30B4FFE97EA /* GhostLoginToken.swift */; };
-		3FA394F8156D1D876E68993A316DF3DD /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F71EC96B0DCF0FF7FA01601E05EA15 /* Token.swift */; };
+		3288825439B550278A5BBFE413A20ECA /* GhostLoginToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C11E8429872C0716B33C29DDABBE42C /* GhostLoginToken.swift */; };
 		4DE5FCC41D100B113B6645EA64410F16 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5465E2051CE332BA7D4E0595F9B44718 /* ParameterEncoding.swift */; };
-		55068F34549C6656AC9E43AB4681E7BB /* GhostLoginManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC1633175E2154E3BD99BC8B8585E8E /* GhostLoginManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E3C5245D39D3252CC9AB268C29C04DC /* GhostLoginManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC1633175E2154E3BD99BC8B8585E8E /* GhostLoginManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55EE2FEBA80A6721A63B516DC6237A16 /* Pods-GhostLoginManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C95D771C2D04E7E058EC65552C02B1 /* Pods-GhostLoginManager_Tests-dummy.m */; };
-		57C0B2651C275CB4002AF568 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C0B2641C275CB4002AF568 /* Error.swift */; };
 		6454277E9ED02BCCC81BEF3531777AF1 /* Pods-GhostLoginManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F919852E6AE49E8957CE0684458BDEF9 /* Pods-GhostLoginManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66E44F4A77001C1C4163658C011BD33B /* GhostLoginJSONSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAF2F5718EAA931E3B3724E67E4B2E5 /* GhostLoginJSONSessionManager.swift */; };
-		78BCFAF1CFE3D04F6549CCCF9D257D4A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706C7AFFE37BA158C3553250F4B5FAED /* Alamofire.framework */; };
+		78B64A3DBB7449874B645F6524716F71 /* GhostLoginManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 649B6C3E86B2BAA04F7AB85F8E373260 /* GhostLoginManager.bundle */; };
 		80F496237530D382A045A29654D8C11C /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52836A3E223CCB5C120D4BE7D37AC1BF /* ServerTrustPolicy.swift */; };
 		82971968CBDAB224212EEB4607C9FB8D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7835749D1C4FA403E4BB17A0C787EDCA /* Result.swift */; };
 		8399DBEE3E2D98EB1F466132E476F4D9 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10653C142FFDF1986227894BF0317944 /* MultipartFormData.swift */; };
-		8BF5053CCB4B54C09FEC39B4E871A52D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFCE8A3DC08536A2B19894C1FF3E86D /* Foundation.framework */; };
 		96D99D0C2472535A169DED65CB231CD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFCE8A3DC08536A2B19894C1FF3E86D /* Foundation.framework */; };
-		9BDF18536A97F613F39D3AB18948CA8B /* GhostLoginTokenParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EECD8F35DE6005A6E1637D33A8CF7E /* GhostLoginTokenParser.swift */; };
+		9E7F02D73EEBAB052C19CFE80E47D1A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFCE8A3DC08536A2B19894C1FF3E86D /* Foundation.framework */; };
 		A2C172FE407C0BC3478ADCA91A6C9CEC /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5241F56B5C8C48BD734958D586267D1A /* Manager.swift */; };
+		A337497C11E1288956BB855D9EFDC913 /* GhostLoginTokenParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C919D131ED58E22EFC54AF1922569A64 /* GhostLoginTokenParser.swift */; };
 		A3505FA2FB3067D53847AD288AC04F03 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA14379DE2012C9EFB2B9C3A3A39AB4 /* Download.swift */; };
 		B0FB4B01682814B9E3D32F9DC4A5E762 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D4D8DBF3D77B1F970DB9DF6C963A84 /* Alamofire.swift */; };
 		B6D2DC3E3DA44CD382B9B425F40E11C1 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1C843C58F0C2DFE4522F24897D8CCE /* Alamofire-dummy.m */; };
+		BCF64653894A03A16DA992F4BCCD34F5 /* GhostLoginJSONSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED7E081371B70A93F051FA38C2A940 /* GhostLoginJSONSessionManager.swift */; };
+		BD109E21179182D568CB59665778389B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706C7AFFE37BA158C3553250F4B5FAED /* Alamofire.framework */; };
 		C3171C955FA688CC901E834117FCAF80 /* Pods-GhostLoginManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4C33C962129492BF93F776610EF82F /* Pods-GhostLoginManager_Example-dummy.m */; };
 		C636552B7AC91FDEDBC286031D968D85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFCE8A3DC08536A2B19894C1FF3E86D /* Foundation.framework */; };
 		C75519F0450166A6F28126ECC7664E9C /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B19103BE8402A434ED95F67573911 /* Validation.swift */; };
-		CBE1B5028F3CE8D05089F669B5B18191 /* GhostLoginSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D589FE32175F6BD77954DAFE724651F2 /* GhostLoginSessionManager.swift */; };
-		CD8A5BFDF675BD6D5C66FF3DCA11B949 /* GhostLoginManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 649B6C3E86B2BAA04F7AB85F8E373260 /* GhostLoginManager.bundle */; };
 		D21B7325B3642887BFBE977E021F2D26 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EBB70A7BA5F9037CD2DA409E148A73 /* ResponseSerialization.swift */; };
 		D75CA395D510E08C404E55F5BDAE55CE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83957AB2EE778B52399CC4C903539BD0 /* Error.swift */; };
-		EB5EE6C7E068C0A1EC1D4C5742E18BA6 /* GhostLoginManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BA1F49FA8BBC5398226E5B00BA25B /* GhostLoginManager-dummy.m */; };
-		F687EE7451C277F015BEA8B2DB65779A /* GhostLoginClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657F6102B5866870116FA669957D084D /* GhostLoginClient.swift */; };
+		DA76EC6630019C8AE3EB9E7AD028A4A6 /* GhostLoginSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1177EBD28AE628D86D99E2808F39D /* GhostLoginSessionManager.swift */; };
+		DA97FA386ADCA0693DF4848897DB2E43 /* GhostLoginTokenJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A893E9144E0F63FE3C048FFD13F36 /* GhostLoginTokenJSONParser.swift */; };
 		FC14480CECE872865A9C6E584F886DA3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23887509C9FF173ECBE0A470EDD527 /* Request.swift */; };
 		FEF0D7653948988B804226129471C1EC /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89117FC38D94C9DF36CA21E3C96EEB7 /* Stream.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1463A8F3B7A3F23A0569FD5329F07CE1 /* PBXContainerItemProxy */ = {
+		3AB388465258E2A25B629FD6E087C765 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 788FED1EC70FD3C431D87A952703D221;
+			remoteInfo = "GhostLoginManager-GhostLoginManager";
+		};
+		77C877EB4F0EDFD82B7A2932457A728C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 432ECC54282C84882B482CCB4CF227FC;
 			remoteInfo = Alamofire;
-		};
-		441402647FA8104D94259547AB3C75E3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5A9A4754F6EC26AA6B03D01EB41FFF5A;
-			remoteInfo = "GhostLoginManager-GhostLoginManager";
 		};
 		7A20E26872A462E87CDC7AA216FE7DB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -78,14 +78,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AD963A80E754B84536CF69CD080CC8E8;
+			remoteGlobalIDString = 93AB815E9BBB8722688EF5DCA2360FF6;
 			remoteInfo = GhostLoginManager;
 		};
 		F9089F801521B64B5C55D957691093F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AD963A80E754B84536CF69CD080CC8E8;
+			remoteGlobalIDString = 93AB815E9BBB8722688EF5DCA2360FF6;
 			remoteInfo = GhostLoginManager;
 		};
 /* End PBXContainerItemProxy section */
@@ -93,6 +93,7 @@
 /* Begin PBXFileReference section */
 		08694A748A628E7BDDB509510D98AAF8 /* Pods-GhostLoginManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GhostLoginManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		0A84BFE52104F10A03DD51A43964E9BC /* Pods-GhostLoginManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GhostLoginManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		0C11E8429872C0716B33C29DDABBE42C /* GhostLoginToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GhostLoginToken.swift; sourceTree = "<group>"; };
 		0C4ABB349439C99977F29FE1CFEFD84E /* Pods-GhostLoginManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GhostLoginManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		10653C142FFDF1986227894BF0317944 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		19C1EAF769714FB540F26BD53BB911CF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,6 +102,8 @@
 		21FA4AD1EF77337F9C8F2AD871ED371D /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		23D4D8DBF3D77B1F970DB9DF6C963A84 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		2B1ADA8DE13AD8141865D9612C729D18 /* Pods-GhostLoginManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GhostLoginManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		31ED7E081371B70A93F051FA38C2A940 /* GhostLoginJSONSessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GhostLoginJSONSessionManager.swift; sourceTree = "<group>"; };
+		39A1177EBD28AE628D86D99E2808F39D /* GhostLoginSessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GhostLoginSessionManager.swift; sourceTree = "<group>"; };
 		3C95F3F392DB046A8833771139DD9D65 /* Pods-GhostLoginManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GhostLoginManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4301030C20E394285567126C87F81F7F /* Pods-GhostLoginManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GhostLoginManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		45C1515B3E0C5B1B788CACCC5E76E3C5 /* Pods-GhostLoginManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GhostLoginManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,16 +113,13 @@
 		5241F56B5C8C48BD734958D586267D1A /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
 		52836A3E223CCB5C120D4BE7D37AC1BF /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		5465E2051CE332BA7D4E0595F9B44718 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		57C0B2641C275CB4002AF568 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		5E53BF5A61CAF6972C5CDD2C3EE6C003 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EA0F9131A7AF77EC0A8D2439A83A94B /* Pods_GhostLoginManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GhostLoginManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8273979621A0A201BD457E798F3D48 /* Pods-GhostLoginManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GhostLoginManager_Tests.modulemap"; sourceTree = "<group>"; };
 		60163FBF4631AA481BED088C43382F2F /* GhostLoginManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GhostLoginManager-prefix.pch"; sourceTree = "<group>"; };
 		649B6C3E86B2BAA04F7AB85F8E373260 /* GhostLoginManager.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GhostLoginManager.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		657F6102B5866870116FA669957D084D /* GhostLoginClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GhostLoginClient.swift; sourceTree = "<group>"; };
 		65C95D771C2D04E7E058EC65552C02B1 /* Pods-GhostLoginManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GhostLoginManager_Tests-dummy.m"; sourceTree = "<group>"; };
 		706C7AFFE37BA158C3553250F4B5FAED /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		72F71EC96B0DCF0FF7FA01601E05EA15 /* Token.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		7337F5EFC25D2750F330446DB20A44AA /* GhostLoginManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GhostLoginManager.modulemap; sourceTree = "<group>"; };
 		779B19103BE8402A434ED95F67573911 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		7835749D1C4FA403E4BB17A0C787EDCA /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
@@ -128,10 +128,8 @@
 		83957AB2EE778B52399CC4C903539BD0 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
 		8A23CED5FA65DBAE1902B0EA6385234E /* Pods-GhostLoginManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GhostLoginManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8AE82608C8C2A46981A07D7E422BEB45 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		8B63D2E35A76D4705B10C30B4FFE97EA /* GhostLoginToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GhostLoginToken.swift; sourceTree = "<group>"; };
 		8D1C843C58F0C2DFE4522F24897D8CCE /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		948996616B0A38BD6FE8C4CB309CC964 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
-		9DAF2F5718EAA931E3B3724E67E4B2E5 /* GhostLoginJSONSessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GhostLoginJSONSessionManager.swift; sourceTree = "<group>"; };
 		9E4C33C962129492BF93F776610EF82F /* Pods-GhostLoginManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GhostLoginManager_Example-dummy.m"; sourceTree = "<group>"; };
 		9EFCE8A3DC08536A2B19894C1FF3E86D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		AA3A707E6BAB2A9FBAE07E8191A92AE3 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,34 +138,36 @@
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BB42877AF9EB0987E0B06E89E695B06F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC6270F6DDFC279AB20145EF9FA9C92C /* Pods-GhostLoginManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GhostLoginManager_Example-resources.sh"; sourceTree = "<group>"; };
+		BD5AFCE0FAB986C3CB3DD8FC460D5EFA /* Token.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		C1759E882021B62A793B2FF56A1CE333 /* Pods-GhostLoginManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GhostLoginManager_Example.modulemap"; sourceTree = "<group>"; };
 		C89117FC38D94C9DF36CA21E3C96EEB7 /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
-		D453D26B352163A611CE2AC91CFFBB9D /* GhostLoginTokenJSONParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GhostLoginTokenJSONParser.swift; sourceTree = "<group>"; };
-		D589FE32175F6BD77954DAFE724651F2 /* GhostLoginSessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GhostLoginSessionManager.swift; sourceTree = "<group>"; };
+		C919D131ED58E22EFC54AF1922569A64 /* GhostLoginTokenParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GhostLoginTokenParser.swift; sourceTree = "<group>"; };
+		D97A893E9144E0F63FE3C048FFD13F36 /* GhostLoginTokenJSONParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GhostLoginTokenJSONParser.swift; sourceTree = "<group>"; };
+		DA8126F9E5B8182393F3A7C6FEF1FC05 /* GhostLoginClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GhostLoginClient.swift; sourceTree = "<group>"; };
+		DD806FF9FA90CB6BE6CA3AEF2A0615E6 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		DE43B73C553FBC4E2B89B1CDE2BF28D6 /* Pods-GhostLoginManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GhostLoginManager_Tests-resources.sh"; sourceTree = "<group>"; };
 		E277A8D0CA6BC0A3B3CECA4909736689 /* Pods-GhostLoginManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GhostLoginManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E6D51E88CF06503F74AC8F5ECD5A209B /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		F4373B3180C1C9D0DBDDEC84FA6E837B /* Pods-GhostLoginManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GhostLoginManager_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F5EBB70A7BA5F9037CD2DA409E148A73 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		F8EECD8F35DE6005A6E1637D33A8CF7E /* GhostLoginTokenParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GhostLoginTokenParser.swift; sourceTree = "<group>"; };
 		F919852E6AE49E8957CE0684458BDEF9 /* Pods-GhostLoginManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GhostLoginManager_Example-umbrella.h"; sourceTree = "<group>"; };
 		FA23887509C9FF173ECBE0A470EDD527 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		FDC1633175E2154E3BD99BC8B8585E8E /* GhostLoginManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GhostLoginManager-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0D62312E561C24205CD32D194A9467FE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		41600887FD628FE8EFE9FF7DE468D7D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				097FFC924B6AC25643B340C098DBCC15 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E52FF4F8A56AC76CD3F1BD6468CA66D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,20 +179,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B92B06F467D2A29021E3CAF5D6DA45B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD109E21179182D568CB59665778389B /* Alamofire.framework in Frameworks */,
+				9E7F02D73EEBAB052C19CFE80E47D1A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCD16BECA64DAAAB6E8155DC9EDE3B84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C636552B7AC91FDEDBC286031D968D85 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FD8C8ED98DB67AC60C4B6CDD96B2E090 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78BCFAF1CFE3D04F6549CCCF9D257D4A /* Alamofire.framework in Frameworks */,
-				8BF5053CCB4B54C09FEC39B4E871A52D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +219,16 @@
 				405A7C3030F6D3BDE3978D6D558FDF7F /* Support Files */,
 			);
 			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		15BB407F372D405DC30D5EF49DF6E046 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				31ED7E081371B70A93F051FA38C2A940 /* GhostLoginJSONSessionManager.swift */,
+				39A1177EBD28AE628D86D99E2808F39D /* GhostLoginSessionManager.swift */,
+				BD5AFCE0FAB986C3CB3DD8FC460D5EFA /* Token.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		20C396BA1B90EEE39D4B19FE012C4F6D /* Pods */ = {
@@ -248,7 +258,7 @@
 		35D2966E7D48D0998D1269A45F868A7F /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				6C54348681418D6EFEFF56282C4D1473 /* Classes */,
+				FA41D47A59B7D8B3002CC84DAE976DA3 /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
@@ -277,15 +287,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Alamofire";
-			sourceTree = "<group>";
-		};
-		54760FB6B32A898B2D8BC33EC169BDB5 /* Parser */ = {
-			isa = PBXGroup;
-			children = (
-				D453D26B352163A611CE2AC91CFFBB9D /* GhostLoginTokenJSONParser.swift */,
-				F8EECD8F35DE6005A6E1637D33A8CF7E /* GhostLoginTokenParser.swift */,
-			);
-			path = Parser;
 			sourceTree = "<group>";
 		};
 		59B91F212518421F271EBA85D5530651 /* Frameworks */ = {
@@ -325,17 +326,6 @@
 			path = "Target Support Files/Pods-GhostLoginManager_Example";
 			sourceTree = "<group>";
 		};
-		6C54348681418D6EFEFF56282C4D1473 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				657F6102B5866870116FA669957D084D /* GhostLoginClient.swift */,
-				AE49A44F4AFFD39E02E99C98725840C0 /* Model */,
-				E9F25CB189CA3C2A43194119DB7C6A25 /* Networking */,
-				54760FB6B32A898B2D8BC33EC169BDB5 /* Parser */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		72B3FE9A12E99FC4F36EBD70AC256696 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,15 +347,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		AE49A44F4AFFD39E02E99C98725840C0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				8B63D2E35A76D4705B10C30B4FFE97EA /* GhostLoginToken.swift */,
-				57C0B2641C275CB4002AF568 /* Error.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		BA88687F25D8B7E2F286F4513455B172 /* Pods-GhostLoginManager_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +365,15 @@
 			path = "Target Support Files/Pods-GhostLoginManager_Tests";
 			sourceTree = "<group>";
 		};
+		BCBCF91BD001626737CB3D85EDA4ECA2 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				D97A893E9144E0F63FE3C048FFD13F36 /* GhostLoginTokenJSONParser.swift */,
+				C919D131ED58E22EFC54AF1922569A64 /* GhostLoginTokenParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
 		C5F87ACF4DCB5BA322EEA236AAD0D078 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,19 +388,37 @@
 			path = "Example/Pods/Target Support Files/GhostLoginManager";
 			sourceTree = "<group>";
 		};
-		E9F25CB189CA3C2A43194119DB7C6A25 /* Networking */ = {
+		E7B2BC5BE3860EBBE8AF6ACF64D55F37 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9DAF2F5718EAA931E3B3724E67E4B2E5 /* GhostLoginJSONSessionManager.swift */,
-				D589FE32175F6BD77954DAFE724651F2 /* GhostLoginSessionManager.swift */,
-				72F71EC96B0DCF0FF7FA01601E05EA15 /* Token.swift */,
+				DD806FF9FA90CB6BE6CA3AEF2A0615E6 /* Error.swift */,
+				0C11E8429872C0716B33C29DDABBE42C /* GhostLoginToken.swift */,
 			);
-			path = Networking;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA41D47A59B7D8B3002CC84DAE976DA3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DA8126F9E5B8182393F3A7C6FEF1FC05 /* GhostLoginClient.swift */,
+				E7B2BC5BE3860EBBE8AF6ACF64D55F37 /* Model */,
+				15BB407F372D405DC30D5EF49DF6E046 /* Networking */,
+				BCBCF91BD001626737CB3D85EDA4ECA2 /* Parser */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		5591352076663398FC8F329618084F3C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E3C5245D39D3252CC9AB268C29C04DC /* GhostLoginManager-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5F7B61281F714E2A64A51E80A2C9C062 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -435,14 +443,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F8202E1F0872122C9E4F17ADF8FAC101 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				55068F34549C6656AC9E43AB4681E7BB /* GhostLoginManager-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -463,13 +463,13 @@
 			productReference = AA3A707E6BAB2A9FBAE07E8191A92AE3 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5A9A4754F6EC26AA6B03D01EB41FFF5A /* GhostLoginManager-GhostLoginManager */ = {
+		788FED1EC70FD3C431D87A952703D221 /* GhostLoginManager-GhostLoginManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6326B50876C79734BE69CFB74310AA8E /* Build configuration list for PBXNativeTarget "GhostLoginManager-GhostLoginManager" */;
+			buildConfigurationList = 2C30EBCAEB41F65D4E850C56D10525F7 /* Build configuration list for PBXNativeTarget "GhostLoginManager-GhostLoginManager" */;
 			buildPhases = (
-				FAF1D867BE4F5CA05AE70EE440348325 /* Sources */,
-				0D62312E561C24205CD32D194A9467FE /* Frameworks */,
-				9572DC82401C291508B37175C5887C49 /* Resources */,
+				E665837CD7309FADDCF1B3733CEAD7DC /* Sources */,
+				4E52FF4F8A56AC76CD3F1BD6468CA66D /* Frameworks */,
+				7A852F2B1360301A6B95C8FE2ABA788A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -479,6 +479,26 @@
 			productName = "GhostLoginManager-GhostLoginManager";
 			productReference = 649B6C3E86B2BAA04F7AB85F8E373260 /* GhostLoginManager.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		93AB815E9BBB8722688EF5DCA2360FF6 /* GhostLoginManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0463B773333C318BEF5C66DA5D5D4E20 /* Build configuration list for PBXNativeTarget "GhostLoginManager" */;
+			buildPhases = (
+				C0C1DD151F28A00339D8F3291A786B2B /* Sources */,
+				B92B06F467D2A29021E3CAF5D6DA45B4 /* Frameworks */,
+				ACCBD6BE165CF7B7E5BB97C12657157F /* Resources */,
+				5591352076663398FC8F329618084F3C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FE92176C7F55C1EB1D34F4CE05AA7A3 /* PBXTargetDependency */,
+				27685DC3B996358FED4B61FAF1D2CE84 /* PBXTargetDependency */,
+			);
+			name = GhostLoginManager;
+			productName = GhostLoginManager;
+			productReference = 520DE49A83BA3C768F38BF919D0A6399 /* GhostLoginManager.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		A38CAD33960AF22C26CD42880902A599 /* Pods-GhostLoginManager_Example */ = {
 			isa = PBXNativeTarget;
@@ -497,26 +517,6 @@
 			name = "Pods-GhostLoginManager_Example";
 			productName = "Pods-GhostLoginManager_Example";
 			productReference = B0E1D003C828F76B1DD54F43AF6F88AF /* Pods_GhostLoginManager_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AD963A80E754B84536CF69CD080CC8E8 /* GhostLoginManager */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A7881E3978E8F8038CEF422EDC8CF5E4 /* Build configuration list for PBXNativeTarget "GhostLoginManager" */;
-			buildPhases = (
-				B1E251BE75302FEB19FC7D48C878DC84 /* Sources */,
-				FD8C8ED98DB67AC60C4B6CDD96B2E090 /* Frameworks */,
-				F1767218D3E738FFC17EE89E50520604 /* Resources */,
-				F8202E1F0872122C9E4F17ADF8FAC101 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7DC1D4DF5EDD833AFFBB7694E5150016 /* PBXTargetDependency */,
-				E19CACD6A6516620B537D9D87E3F0594 /* PBXTargetDependency */,
-			);
-			name = GhostLoginManager;
-			productName = GhostLoginManager;
-			productReference = 520DE49A83BA3C768F38BF919D0A6399 /* GhostLoginManager.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EA0EF852CD1974AD89ACD7DD09126EC4 /* Pods-GhostLoginManager_Tests */ = {
@@ -545,7 +545,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -560,8 +560,8 @@
 			projectRoot = "";
 			targets = (
 				432ECC54282C84882B482CCB4CF227FC /* Alamofire */,
-				AD963A80E754B84536CF69CD080CC8E8 /* GhostLoginManager */,
-				5A9A4754F6EC26AA6B03D01EB41FFF5A /* GhostLoginManager-GhostLoginManager */,
+				93AB815E9BBB8722688EF5DCA2360FF6 /* GhostLoginManager */,
+				788FED1EC70FD3C431D87A952703D221 /* GhostLoginManager-GhostLoginManager */,
 				A38CAD33960AF22C26CD42880902A599 /* Pods-GhostLoginManager_Example */,
 				EA0EF852CD1974AD89ACD7DD09126EC4 /* Pods-GhostLoginManager_Tests */,
 			);
@@ -569,18 +569,18 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9572DC82401C291508B37175C5887C49 /* Resources */ = {
+		7A852F2B1360301A6B95C8FE2ABA788A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1767218D3E738FFC17EE89E50520604 /* Resources */ = {
+		ACCBD6BE165CF7B7E5BB97C12657157F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD8A5BFDF675BD6D5C66FF3DCA11B949 /* GhostLoginManager.bundle in Resources */,
+				78B64A3DBB7449874B645F6524716F71 /* GhostLoginManager.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,19 +603,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1E251BE75302FEB19FC7D48C878DC84 /* Sources */ = {
+		C0C1DD151F28A00339D8F3291A786B2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F687EE7451C277F015BEA8B2DB65779A /* GhostLoginClient.swift in Sources */,
-				66E44F4A77001C1C4163658C011BD33B /* GhostLoginJSONSessionManager.swift in Sources */,
-				EB5EE6C7E068C0A1EC1D4C5742E18BA6 /* GhostLoginManager-dummy.m in Sources */,
-				CBE1B5028F3CE8D05089F669B5B18191 /* GhostLoginSessionManager.swift in Sources */,
-				2DEA5A07F22777C650E73E5FE0AB38D9 /* GhostLoginToken.swift in Sources */,
-				1FC3315C137CDB350AE63B863B0089DF /* GhostLoginTokenJSONParser.swift in Sources */,
-				9BDF18536A97F613F39D3AB18948CA8B /* GhostLoginTokenParser.swift in Sources */,
-				57C0B2651C275CB4002AF568 /* Error.swift in Sources */,
-				3FA394F8156D1D876E68993A316DF3DD /* Token.swift in Sources */,
+				141F052955BC305D05ADF40F9948ED1E /* Error.swift in Sources */,
+				1D125712306DBA6A4E7DC894BE99E702 /* GhostLoginClient.swift in Sources */,
+				BCF64653894A03A16DA992F4BCCD34F5 /* GhostLoginJSONSessionManager.swift in Sources */,
+				2C2546656D0A7640B13985362069BFC0 /* GhostLoginManager-dummy.m in Sources */,
+				DA76EC6630019C8AE3EB9E7AD028A4A6 /* GhostLoginSessionManager.swift in Sources */,
+				3288825439B550278A5BBFE413A20ECA /* GhostLoginToken.swift in Sources */,
+				DA97FA386ADCA0693DF4848897DB2E43 /* GhostLoginTokenJSONParser.swift in Sources */,
+				A337497C11E1288956BB855D9EFDC913 /* GhostLoginTokenParser.swift in Sources */,
+				210500611BB2B2F33053A99CBA3FD89A /* Token.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E665837CD7309FADDCF1B3733CEAD7DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,27 +648,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAF1D867BE4F5CA05AE70EE440348325 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		08B296E04A014AC69924C145CE255B81 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GhostLoginManager;
-			target = AD963A80E754B84536CF69CD080CC8E8 /* GhostLoginManager */;
+			target = 93AB815E9BBB8722688EF5DCA2360FF6 /* GhostLoginManager */;
 			targetProxy = F327355C5183AE75806F43A05138E2E3 /* PBXContainerItemProxy */;
 		};
 		1238EE6AE7D60E6244765774BD0CF1A1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GhostLoginManager;
-			target = AD963A80E754B84536CF69CD080CC8E8 /* GhostLoginManager */;
+			target = 93AB815E9BBB8722688EF5DCA2360FF6 /* GhostLoginManager */;
 			targetProxy = F9089F801521B64B5C55D957691093F0 /* PBXContainerItemProxy */;
+		};
+		27685DC3B996358FED4B61FAF1D2CE84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GhostLoginManager-GhostLoginManager";
+			target = 788FED1EC70FD3C431D87A952703D221 /* GhostLoginManager-GhostLoginManager */;
+			targetProxy = 3AB388465258E2A25B629FD6E087C765 /* PBXContainerItemProxy */;
 		};
 		2C4E6F617239B799711CB1D868DAA7FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -669,17 +675,11 @@
 			target = 432ECC54282C84882B482CCB4CF227FC /* Alamofire */;
 			targetProxy = AF8463C3D4D6975B6EBA48C06A6560AE /* PBXContainerItemProxy */;
 		};
-		7DC1D4DF5EDD833AFFBB7694E5150016 /* PBXTargetDependency */ = {
+		4FE92176C7F55C1EB1D34F4CE05AA7A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 432ECC54282C84882B482CCB4CF227FC /* Alamofire */;
-			targetProxy = 1463A8F3B7A3F23A0569FD5329F07CE1 /* PBXContainerItemProxy */;
-		};
-		E19CACD6A6516620B537D9D87E3F0594 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "GhostLoginManager-GhostLoginManager";
-			target = 5A9A4754F6EC26AA6B03D01EB41FFF5A /* GhostLoginManager-GhostLoginManager */;
-			targetProxy = 441402647FA8104D94259547AB3C75E3 /* PBXContainerItemProxy */;
+			targetProxy = 77C877EB4F0EDFD82B7A2932457A728C /* PBXContainerItemProxy */;
 		};
 		FCA07F47678334ACF05DE82ADDFA7B74 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -690,18 +690,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		013DD79A32598008A6A898A67E99E619 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E55CCDAE49FB96CD983D0BADFC4FAEA /* GhostLoginManager.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = GhostLoginManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -757,7 +745,6 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_GhostLoginManager_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -789,7 +776,6 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_GhostLoginManager_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -797,6 +783,18 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		39478F392EACCACBA7D687F6A22E22EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E55CCDAE49FB96CD983D0BADFC4FAEA /* GhostLoginManager.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = GhostLoginManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -818,7 +816,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -847,7 +844,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -890,7 +886,6 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_GhostLoginManager_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -900,19 +895,7 @@
 			};
 			name = Release;
 		};
-		6495C47DEF4A0F8CB0B82D31BE41B4EF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E55CCDAE49FB96CD983D0BADFC4FAEA /* GhostLoginManager.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = GhostLoginManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		7069842808CF766D11020C534CCCA05B /* Debug */ = {
+		6ADF56211DEAFAC78BB76D04FFB21AF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7E55CCDAE49FB96CD983D0BADFC4FAEA /* GhostLoginManager.xcconfig */;
 			buildSettings = {
@@ -930,7 +913,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GhostLoginManager/GhostLoginManager.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = GhostLoginManager;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -962,7 +944,6 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_GhostLoginManager_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -972,31 +953,15 @@
 			};
 			name = Release;
 		};
-		7973F5CFA51BFCD6694BD7BA36BEAA3E /* Release */ = {
+		7843B3C21E8DF4870A4E8AC2DA4BB372 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7E55CCDAE49FB96CD983D0BADFC4FAEA /* GhostLoginManager.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GhostLoginManager/GhostLoginManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GhostLoginManager/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GhostLoginManager/GhostLoginManager.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = GhostLoginManager;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -1018,8 +983,34 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C1D377FAE67CA27D8BAF0C35B4230D15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E55CCDAE49FB96CD983D0BADFC4FAEA /* GhostLoginManager.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GhostLoginManager/GhostLoginManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GhostLoginManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GhostLoginManager/GhostLoginManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GhostLoginManager;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1040,20 +1031,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		0463B773333C318BEF5C66DA5D5D4E20 /* Build configuration list for PBXNativeTarget "GhostLoginManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ADF56211DEAFAC78BB76D04FFB21AF0 /* Debug */,
+				C1D377FAE67CA27D8BAF0C35B4230D15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C30EBCAEB41F65D4E850C56D10525F7 /* Build configuration list for PBXNativeTarget "GhostLoginManager-GhostLoginManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39478F392EACCACBA7D687F6A22E22EE /* Debug */,
+				7843B3C21E8DF4870A4E8AC2DA4BB372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
 				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6326B50876C79734BE69CFB74310AA8E /* Build configuration list for PBXNativeTarget "GhostLoginManager-GhostLoginManager" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6495C47DEF4A0F8CB0B82D31BE41B4EF /* Debug */,
-				013DD79A32598008A6A898A67E99E619 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1072,15 +1072,6 @@
 			buildConfigurations = (
 				51347C6CC43E058148BBA2D2833EC82A /* Debug */,
 				BCDE1E85FD75D976235B1535F079754A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A7881E3978E8F8038CEF422EDC8CF5E4 /* Build configuration list for PBXNativeTarget "GhostLoginManager" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7069842808CF766D11020C534CCCA05B /* Debug */,
-				7973F5CFA51BFCD6694BD7BA36BEAA3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
