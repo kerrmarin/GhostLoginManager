@@ -9,14 +9,15 @@
 Pod::Spec.new do |s|
   s.name             = "GhostLoginManager"
   s.version          = "0.1.0"
-  s.summary          = "A short description of GhostLoginManager."
+  s.summary          = "A client library to log into an installation of Ghost"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
+  s.description      = <<-DESCi
+  GhostLoginManager is an Swift client for the Ghost authentication API. 
                        DESC
 
   s.homepage         = "https://github.com/kerrmarin/GhostLoginManager"
