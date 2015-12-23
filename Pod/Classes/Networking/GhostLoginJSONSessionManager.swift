@@ -25,7 +25,7 @@ public struct GhostLoginJSONSessionManager : GhostLoginSessionManager {
      *  @param domainURL the URL where the Ghost installation is hosted
      *
      */
-    public init?(domainURL: NSURL) {
+    public init(domainURL: NSURL) {
         self.baseURL = domainURL
     }
     

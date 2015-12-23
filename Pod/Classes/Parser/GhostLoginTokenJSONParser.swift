@@ -17,6 +17,8 @@ public enum GhostLoginTokenErrorCode : Int {
 
 public struct GhostLoginTokenJSONParser: GhostLoginTokenParser {
     
+    public init() {}
+    
     public func tokenFromResponse(response: AnyObject) throws -> GhostLoginToken? {
         guard let responseDictionary = response as? [String : AnyObject] else {
             throw Error.AccessTokenParsingError(domain: GhostLoginTokenParserParseError,

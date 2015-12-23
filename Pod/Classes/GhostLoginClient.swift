@@ -35,6 +35,7 @@ public class GhostLoginClient {
         self.timer = nil
     }
     
+    /// Attempts to log in with a given username and password
     public func loginWithUsername(username: String, password: String, complete: GhostLoginBlock) {
         self.manager.loginWithUsername(username, password: password) { (results, error) -> Void in
             
@@ -52,11 +53,12 @@ public class GhostLoginClient {
                     return;
                 }
                 complete(token: nil, error: e.underlyingError)
+                return;
             }
             
             self.timer?.invalidate()
             self.refreshTimer()
-            
+            complete(token: self.token, error: nil)
         }
     }
     
@@ -68,11 +70,11 @@ public class GhostLoginClient {
     
     /// Refreshes the timer to fire just before the expected expiry given by the current token
     private func refreshTimer() {
-        guard let token = self.token else {
+        guard self.token != nil else {
             return
         }
         
-        let interval = Double(token.expiry) * 0.9
+        let interval = Double(self.token!.expiry) * 0.9
 
         self.timer = NSTimer.scheduledTimerWithTimeInterval(interval,
             target: self,
@@ -83,10 +85,10 @@ public class GhostLoginClient {
     
     /// Attempts to refresh the access token with the current refresh token
     private func refreshAccessToken() {
-        guard let token = self.refreshToken else {
+        guard self.refreshToken != nil else {
             return
         }
-        self.manager.refreshTokenWithToken(token) { (results, error) -> Void in
+        self.manager.refreshTokenWithToken(self.refreshToken!) { (results, error) -> Void in
             guard error == nil else {
                 self.delegate?.loginClientTokenRefreshDidFail(self, error: error!)
                 return
@@ -94,7 +96,7 @@ public class GhostLoginClient {
             
             do {
                 self.token = try self.parser.tokenFromResponse(results!)
-            } catch let error as NSError {
+            } catch let error {
                 guard let e = error as? Error else {
                     let unknownError = NSError(domain: "Unknown error", code: Int.max, userInfo: nil)
                     self.delegate?.loginClientTokenRefreshDidFail(self, error: unknownError)
