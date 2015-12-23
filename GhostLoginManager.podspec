@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESCi
+  s.description      = <<-DESC
   GhostLoginManager is an Swift client for the Ghost authentication API. 
                        DESC
 
