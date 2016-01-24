@@ -70,11 +70,11 @@ public class GhostLoginClient {
     
     /// Refreshes the timer to fire just before the expected expiry given by the current token
     private func refreshTimer() {
-        guard self.token != nil else {
+        guard let token = self.token else {
             return
         }
         
-        let interval = Double(self.token!.expiry) * 0.9
+        let interval = Double(token.expiry) * 0.9
 
         self.timer = NSTimer.scheduledTimerWithTimeInterval(interval,
             target: self,
@@ -84,7 +84,7 @@ public class GhostLoginClient {
     }
     
     /// Attempts to refresh the access token with the current refresh token
-    private func refreshAccessToken() {
+    @objc private func refreshAccessToken() {
         guard self.refreshToken != nil else {
             return
         }
@@ -96,6 +96,7 @@ public class GhostLoginClient {
             
             do {
                 self.token = try self.parser.tokenFromResponse(results!)
+                self.refreshTimer()
             } catch let error {
                 guard let e = error as? Error else {
                     let unknownError = NSError(domain: "Unknown error", code: Int.max, userInfo: nil)

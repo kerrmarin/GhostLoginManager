@@ -41,7 +41,6 @@ class ViewController: UIViewController {
             }
             
             self.resultsTextView!.text = log + "\nLOGGED IN!"
-            
         }
     }
 }
