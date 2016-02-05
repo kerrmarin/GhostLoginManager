@@ -6,7 +6,6 @@
 //
 //
 
-let GhostLoginTokenParserParseError = "Error Parsing JSON"
 let GhostLoginRefreshTokenParserParseError = "Error Parsing Refresh Token JSON"
 
 public protocol GhostLoginTokenParser {
@@ -32,5 +31,4 @@ public protocol GhostLoginTokenParser {
      *  @return potentially, an NSString object containing the refresh token for this user.
      */
     func refreshTokenFromResponse(response: AnyObject) throws -> String?
-    
 }

@@ -8,12 +8,11 @@
 
 import Foundation
 
-public enum GhostLoginTokenErrorCode : Int {
+internal enum GhostLoginTokenErrorCode : Int {
     case Unknown
     case UnexpectedTypes
     case InvalidJSON
 }
-
 
 public struct GhostLoginTokenJSONParser: GhostLoginTokenParser {
     
@@ -21,20 +20,17 @@ public struct GhostLoginTokenJSONParser: GhostLoginTokenParser {
     
     public func tokenFromResponse(response: AnyObject) throws -> GhostLoginToken? {
         guard let responseDictionary = response as? [String : AnyObject] else {
-            throw Error.AccessTokenParsingError(domain: GhostLoginTokenParserParseError,
-                code: GhostLoginTokenErrorCode.InvalidJSON.rawValue,
+            throw Error.AccessTokenParsingError(code: GhostLoginTokenErrorCode.InvalidJSON,
                 userInfo: [NSLocalizedDescriptionKey : "Error Parsing JSON - JSON was not valid."])
         }
         
         guard let accessToken = responseDictionary["access_token"] as? String else {
-            throw Error.AccessTokenParsingError(domain: GhostLoginTokenParserParseError,
-                code: GhostLoginTokenErrorCode.UnexpectedTypes.rawValue,
+            throw Error.AccessTokenParsingError(code: GhostLoginTokenErrorCode.UnexpectedTypes,
                 userInfo: [NSLocalizedDescriptionKey : "Error Parsing JSON - access_token was not a string"])
         }
         
         guard let expiryNumber = responseDictionary["expires_in"] as? NSNumber where expiryNumber.integerValue > 0 else {
-            throw Error.AccessTokenParsingError(domain: GhostLoginTokenParserParseError,
-                code: GhostLoginTokenErrorCode.UnexpectedTypes.rawValue,
+            throw Error.AccessTokenParsingError(code: GhostLoginTokenErrorCode.UnexpectedTypes,
                 userInfo: [NSLocalizedDescriptionKey : "Error Parsing JSON - expires_in was either not a number or less than or equal to zero"])
 
         }
@@ -46,19 +42,15 @@ public struct GhostLoginTokenJSONParser: GhostLoginTokenParser {
     
     public func refreshTokenFromResponse(response: AnyObject) throws -> String? {
         guard let responseDictionary = response as? [String : AnyObject] else {
-            throw Error.RefreshTokenParsingError(domain: GhostLoginRefreshTokenParserParseError,
-                code: GhostLoginTokenErrorCode.InvalidJSON.rawValue,
+            throw Error.RefreshTokenParsingError(code: GhostLoginTokenErrorCode.InvalidJSON,
                 userInfo: [NSLocalizedDescriptionKey : "Error Parsing JSON - JSON was not valid."])
         }
         
         guard let refreshToken = responseDictionary["refresh_token"] as? String else {
-            throw Error.RefreshTokenParsingError(domain: GhostLoginRefreshTokenParserParseError,
-                code: GhostLoginTokenErrorCode.UnexpectedTypes.rawValue,
+            throw Error.RefreshTokenParsingError(code: GhostLoginTokenErrorCode.UnexpectedTypes,
                 userInfo: [NSLocalizedDescriptionKey : "Error Parsing JSON - refresh_token was not a string"])
         }
         
         return refreshToken
-        
     }
-    
 }

@@ -1,6 +1,6 @@
 PODS:
-  - Alamofire (3.1.4)
-  - GhostLoginManager (0.1.0):
+  - Alamofire (3.1.5)
+  - GhostLoginManager (0.2.0):
     - Alamofire (~> 3.0)
 
 DEPENDENCIES:
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Alamofire: fbc829692f351fa1d8a31dd75fd7f7f56fea31fb
-  GhostLoginManager: fc0e85c3e2aa0d589520ae3263281f84ed59c9ef
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  GhostLoginManager: 8a6cad3f88c50e1c76c35e4d81bcf2776a3fdc1c
 
 COCOAPODS: 0.39.0

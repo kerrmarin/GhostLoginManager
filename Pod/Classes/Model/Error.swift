@@ -8,20 +8,29 @@
 
 import Foundation
 
-enum Error : ErrorType {
-    case AccessTokenParsingError(domain : String, code : Int, userInfo : [NSObject : AnyObject])
-    case RefreshTokenParsingError(domain : String, code : Int, userInfo : [NSObject : AnyObject])
+private let GhostLoginTokenParserParseError = "Error Parsing Token JSON"
+private let GhostUserParserParseError = "Error Parsing User JSON"
+
+internal enum Error : ErrorType {
+    case AccessTokenParsingError(code : GhostLoginTokenErrorCode, userInfo : [NSObject : AnyObject])
+    case RefreshTokenParsingError(code : GhostLoginTokenErrorCode, userInfo : [NSObject : AnyObject])
+    case UserParsingError(code : GhostLoginUserErrorCode, userInfo : [NSObject : AnyObject])
     
-    var underlyingError : NSError {
+    internal var underlyingError : NSError {
         switch self {
-        case .AccessTokenParsingError(let domain, let code, let userInfo):
-            return NSError(domain: domain,
-                             code: code,
+        case .AccessTokenParsingError(let code, let userInfo):
+            return NSError(domain: GhostLoginTokenParserParseError,
+                             code: code.rawValue,
                          userInfo: userInfo)
             
-        case .RefreshTokenParsingError(let domain, let code, let userInfo):
-            return NSError(domain: domain,
-                             code: code,
+        case .RefreshTokenParsingError(let code, let userInfo):
+            return NSError(domain: GhostLoginTokenParserParseError,
+                             code: code.rawValue,
+                         userInfo: userInfo)
+            
+        case .UserParsingError(let code, let userInfo):
+            return NSError(domain: GhostUserParserParseError,
+                             code: code.rawValue,
                          userInfo: userInfo)
         }
     }

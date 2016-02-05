@@ -1,8 +1,8 @@
 {
   "name": "GhostLoginManager",
-  "version": "0.1.0",
-  "summary": "A short description of GhostLoginManager.",
-  "description": "",
+  "version": "0.2.0",
+  "summary": "A client library to log into an installation of Ghost",
+  "description": "GhostLoginManager is an Swift client for the Ghost authentication API.",
   "homepage": "https://github.com/kerrmarin/GhostLoginManager",
   "license": "MIT",
   "authors": {
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/kerrmarin/GhostLoginManager.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.0"

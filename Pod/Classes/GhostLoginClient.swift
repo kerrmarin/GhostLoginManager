@@ -8,6 +8,7 @@
 import Foundation
 
 public typealias GhostLoginBlock = (token: GhostLoginToken?, error: NSError?) -> Void
+public typealias GhostUserBlock = (user: GhostUser?, error: NSError?) -> Void
 
 protocol GhostLoginClientDelegate {
     func loginClientTokenRefreshDidFail(client: GhostLoginClient, error: NSError)
@@ -21,13 +22,15 @@ public class GhostLoginClient {
     
     private let manager : GhostLoginSessionManager
     private let parser : GhostLoginTokenParser
+    private let userParser : GhostLoginUserParser
     
     private var refreshToken : String?
     private var timer : NSTimer?
     
-    public init(manager: GhostLoginSessionManager, parser: GhostLoginTokenParser) {
+    public init(manager: GhostLoginSessionManager, parser: GhostLoginTokenParser, userParser: GhostLoginUserParser) {
         self.manager = manager
         self.parser = parser
+        self.userParser = userParser
     }
     
     deinit {
@@ -104,6 +107,33 @@ public class GhostLoginClient {
                     return
                 }
                 self.delegate?.loginClientTokenRefreshDidFail(self, error: e.underlyingError)
+            }
+        }
+    }
+    
+    //MARK: User
+    
+    public func getLoggedInUser(complete: GhostUserBlock) {
+        guard let token = self.token?.accessToken else {
+            return
+        }
+        
+        self.manager.getCurrentlyLoggedInUser(token) { (results, error) in
+            guard results != nil else {
+                complete(user: nil, error: error)
+                return
+            }
+            
+            do {
+                let users = try self.userParser.parseUsersFromResponse(results!)
+                complete(user: users!.first, error: nil)
+            } catch let error {
+                guard let e = error as? Error else {
+                    let unknownError = NSError(domain: "Unknown error", code: Int.max, userInfo: nil)
+                    complete(user: nil, error: unknownError)
+                    return
+                }
+                complete(user: nil, error: e.underlyingError)
             }
         }
     }

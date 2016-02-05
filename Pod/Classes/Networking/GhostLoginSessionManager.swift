@@ -32,4 +32,7 @@ public protocol GhostLoginSessionManager {
     *
     */
     func refreshTokenWithToken(token: String, complete: GhostLoginNetworkBlock)
+    
+    
+    func getCurrentlyLoggedInUser(token: String, complete: GhostLoginNetworkBlock)
 }

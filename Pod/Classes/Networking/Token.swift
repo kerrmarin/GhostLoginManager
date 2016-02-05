@@ -23,14 +23,14 @@ enum Token : URLRequestConvertible {
                                   "password" : password,
                                   "client_id" : "ghost-admin"]
                 
-                return (baseUrl + "/token", parameters)
+                return (baseUrl + "/authentication/token", parameters)
                 
             case .Refresh(let baseUrl, let token):
                 let parameters = ["grant_type" : "refresh_token",
                                   "refresh_token" : token,
                                   "client_id" : "ghost-admin"]
                 
-                return (baseUrl + "/token", parameters)
+                return (baseUrl + "/authentication/token", parameters)
             }
         }()
         

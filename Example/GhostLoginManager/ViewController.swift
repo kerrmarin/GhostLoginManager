@@ -11,11 +11,11 @@ import GhostLoginManager
 
 class ViewController: UIViewController {
 
-    @IBOutlet var loginButton : UIButton?
-    @IBOutlet var emailTextField : UITextField?
-    @IBOutlet var passwordTextField : UITextField?
-    @IBOutlet var domainTextField : UITextField?
-    @IBOutlet var resultsTextView : UITextView?
+    @IBOutlet private var loginButton : UIButton?
+    @IBOutlet private var emailTextField : UITextField?
+    @IBOutlet private var passwordTextField : UITextField?
+    @IBOutlet private var domainTextField : UITextField?
+    @IBOutlet private var resultsTextView : UITextView?
     
     var client : GhostLoginClient?
     
@@ -31,16 +31,24 @@ class ViewController: UIViewController {
         let url = NSURL(string: domain)!
         let manager = GhostLoginJSONSessionManager(domainURL: url)
         let parser = GhostLoginTokenJSONParser()
+        let userParser = GhostLoginUserJSONParser()
         
-        self.client = GhostLoginClient(manager: manager, parser: parser)
+        self.client = GhostLoginClient(manager: manager, parser: parser, userParser: userParser)
         
-        self.client!.loginWithUsername(email, password: password) { (token, error) -> Void in
+        self.client!.loginWithUsername(email, password: password) { (token, error) in
             guard error == nil else {
                 self.resultsTextView!.text = log + "\nError: \(error!.localizedDescription)"
                 return
             }
             
             self.resultsTextView!.text = log + "\nLOGGED IN!"
+            
+            self.client!.getLoggedInUser({ (user, error) in
+                guard error == nil else {
+                    return  
+                }
+                self.resultsTextView!.text = self.resultsTextView!.text + "\nUser: \(user!.name)"
+            })
         }
     }
 }
