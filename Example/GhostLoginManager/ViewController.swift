@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         let url = NSURL(string: domain)!
         let manager = GhostLoginJSONSessionManager(domainURL: url)
         let parser = GhostLoginTokenJSONParser()
-        let userParser = GhostLoginUserJSONParser()
+        let userParser = GhostLoginUserJSONParser(baseURL: domain)
         
         self.client = GhostLoginClient(manager: manager, parser: parser, userParser: userParser)
         

@@ -23,14 +23,3 @@ public enum GhostParsingErrorCode : Int {
 internal enum ParseErrorType : ErrorType {
     case ParsingError(code: GhostParsingErrorCode, detail: String)
 }
-
-internal struct ParseError {
-    let type : ParseErrorType
-    let code: GhostParsingErrorCode
-    let userInfo: [String : AnyObject]
-    
-    static func NSErrorFromParseError(error: ParseError) -> NSError {
-        return NSError(domain: GhostErrorDomain, code: error.code.rawValue, userInfo: error.userInfo)
-    }
-}
-

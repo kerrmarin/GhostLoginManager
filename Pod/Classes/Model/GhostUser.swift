@@ -19,10 +19,10 @@ public struct GhostUser {
     public let name : String
     public let slug : String
     public let email : String
-    public let image : String
-    public let cover : String
+    public let imageURL : NSURL
+    public let coverImageURL : NSURL
     public let bio : String
-    public let website : String
+    public let websiteURL : NSURL
     public let location : String
     public let status : UserStatus
     public let language : String

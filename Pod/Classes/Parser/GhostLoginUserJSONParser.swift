@@ -14,7 +14,11 @@ public enum GhostLoginUserParsingErrorCode : Int {
 
 public class GhostLoginUserJSONParser: GhostLoginUserParser {
     
-    public init() {}
+    private let baseURL : String
+    
+    public init(baseURL: String) {
+        self.baseURL = baseURL
+    }
         
     public func parseUsersFromResponse(response: AnyObject) throws -> [GhostUser]? {
         guard let users = response["users"] as? [AnyObject] else {
@@ -30,15 +34,18 @@ public class GhostLoginUserJSONParser: GhostLoginUserParser {
                let slug = user["slug"] as? String,
                let email = user["email"] as? String,
                let image = user["image"] as? String,
+               let imageURL = NSURL(string: "\(self.baseURL)\(image)"),
                let cover = user["cover"] as? String,
+               let coverURL = NSURL(string: "\(self.baseURL)\(cover)"),
                let bio = user["bio"] as? String,
                let website = user["website"] as? String,
+               let websiteURL = NSURL(string: website),
                let location = user["location"] as? String,
                let status = user["status"] as? String,
                let language = user["language"] as? String {
                 
-                let userStatus : UserStatus = status == "Active" ? .Active : .Unknown
-                    let ghostUser = GhostUser(userId: userId, uuid: uuid, name: name, slug: slug, email: email, image: image, cover: cover, bio: bio, website: website, location: location, status: userStatus, language: language)
+                let userStatus : UserStatus = status == "active" ? .Active : .Unknown
+                    let ghostUser = GhostUser(userId: userId, uuid: uuid, name: name, slug: slug, email: email, imageURL: imageURL, coverImageURL: coverURL, bio: bio, websiteURL: websiteURL, location: location, status: userStatus, language: language)
                     ghostUsers.append(ghostUser)
                 
             } else {

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "GhostLoginManager"
-  s.version          = "0.4.0"
+  s.version          = "0.4.1"
   s.summary          = "A client library to log into an installation of Ghost"
 
 # This description is used to generate tags and improve search results.
