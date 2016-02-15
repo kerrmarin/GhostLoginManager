@@ -27,12 +27,17 @@ public protocol GhostLoginSessionManager {
     *  to continuously log in, and there shouldn't be any reason to store their username and password
     *  locally, just store the refresh token.
     *
-    *  @param token    a random string that is used to refresh the access token.
+    *  @param token    a string that is used to refresh the access token.
     *  @param complete a block called with the results of the network request.
     *
     */
     func refreshTokenWithToken(token: String, complete: GhostLoginNetworkBlock)
     
-    
+    /**
+     *  Gets the current logged in user
+     *
+     *  @param token a string that is used to identify the logged in user.
+     *  @param complete a block called with the results of the network request.
+     */
     func getCurrentlyLoggedInUser(token: String, complete: GhostLoginNetworkBlock)
 }

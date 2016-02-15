@@ -21,7 +21,7 @@
 		4DF079ED0138D4B7B169DDA9B5CF2F84 /* GhostLoginSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E483F8E56553B3EBDF729AECFF5F6D38 /* GhostLoginSessionManager.swift */; };
 		511CB05A5CEBC7279F6A92E5E4DBD76B /* GhostLoginManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC1633175E2154E3BD99BC8B8585E8E /* GhostLoginManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55EE2FEBA80A6721A63B516DC6237A16 /* Pods-GhostLoginManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C95D771C2D04E7E058EC65552C02B1 /* Pods-GhostLoginManager_Tests-dummy.m */; };
-		5B4866083AFFD0CE865315E243B6B030 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D407D96E5865E77A25523C3AE02DD3 /* Error.swift */; };
+		5B4866083AFFD0CE865315E243B6B030 /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D407D96E5865E77A25523C3AE02DD3 /* ParseError.swift */; };
 		6454277E9ED02BCCC81BEF3531777AF1 /* Pods-GhostLoginManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F919852E6AE49E8957CE0684458BDEF9 /* Pods-GhostLoginManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F3E713CA69E1F2E43D43CBF8E81EA3C /* GhostUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D6F0614449CD853BCC391D106D77A /* GhostUser.swift */; };
 		80F496237530D382A045A29654D8C11C /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52836A3E223CCB5C120D4BE7D37AC1BF /* ServerTrustPolicy.swift */; };
@@ -157,7 +157,7 @@
 		E8576E2EEA8311152CE05E3363500D30 /* GhostLoginToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GhostLoginToken.swift; sourceTree = "<group>"; };
 		F4373B3180C1C9D0DBDDEC84FA6E837B /* Pods-GhostLoginManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GhostLoginManager_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F5EBB70A7BA5F9037CD2DA409E148A73 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		F8D407D96E5865E77A25523C3AE02DD3 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		F8D407D96E5865E77A25523C3AE02DD3 /* ParseError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ParseError.swift; sourceTree = "<group>"; };
 		F919852E6AE49E8957CE0684458BDEF9 /* Pods-GhostLoginManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GhostLoginManager_Example-umbrella.h"; sourceTree = "<group>"; };
 		FA23887509C9FF173ECBE0A470EDD527 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		FDC1633175E2154E3BD99BC8B8585E8E /* GhostLoginManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GhostLoginManager-umbrella.h"; sourceTree = "<group>"; };
@@ -359,7 +359,7 @@
 		997CB2D6335C84988002E504DD91FA03 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F8D407D96E5865E77A25523C3AE02DD3 /* Error.swift */,
+				F8D407D96E5865E77A25523C3AE02DD3 /* ParseError.swift */,
 				E8576E2EEA8311152CE05E3363500D30 /* GhostLoginToken.swift */,
 				0B3D6F0614449CD853BCC391D106D77A /* GhostUser.swift */,
 			);
@@ -603,7 +603,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B4866083AFFD0CE865315E243B6B030 /* Error.swift in Sources */,
+				5B4866083AFFD0CE865315E243B6B030 /* ParseError.swift in Sources */,
 				9553F7714E3B74C0A3C6D54516FD5589 /* GhostLoginClient.swift in Sources */,
 				FFBA2EE3660E85168A36756B8FEEE2C8 /* GhostLoginJSONSessionManager.swift in Sources */,
 				143CA49E5BF486B0D706ADC25B8E5A0C /* GhostLoginManager-dummy.m in Sources */,

@@ -42,21 +42,21 @@ public class GhostLoginClient {
     public func loginWithUsername(username: String, password: String, complete: GhostLoginBlock) {
         self.manager.loginWithUsername(username, password: password) { (results, error) -> Void in
             
-            guard results != nil else {
+            guard let results = results else {
                 complete(token: nil, error: error)
-                return;
+                return
             }
 
             do {
-                try self.extractTokensFromResponse(results!)
-            } catch let error {
-                guard let e = error as? Error else {
-                    let unknownError = NSError(domain: "Unknown error", code: Int.max, userInfo: nil)
-                    complete(token: nil, error: unknownError)
-                    return;
-                }
-                complete(token: nil, error: e.underlyingError)
-                return;
+                try self.extractTokensFromResponse(results)
+            } catch ParseErrorType.ParsingError(let code, let detail) {
+                let error = NSError(domain: GhostErrorDomain, code: code.rawValue, userInfo: [NSLocalizedDescriptionKey : detail])
+                complete(token: nil, error: error)
+                return
+            } catch {
+                let error = NSError(domain: GhostErrorDomain, code: -1000, userInfo: [NSLocalizedDescriptionKey : "Unknown error"])
+                complete(token: nil, error: error)
+                return
             }
             
             self.timer?.invalidate()
@@ -91,49 +91,48 @@ public class GhostLoginClient {
         guard self.refreshToken != nil else {
             return
         }
-        self.manager.refreshTokenWithToken(self.refreshToken!) { (results, error) -> Void in
-            guard error == nil else {
+        self.manager.refreshTokenWithToken(self.refreshToken!) { (results, error) in
+            guard let results = results else {
                 self.delegate?.loginClientTokenRefreshDidFail(self, error: error!)
                 return
             }
             
             do {
-                self.token = try self.parser.tokenFromResponse(results!)
+                self.token = try self.parser.tokenFromResponse(results)
                 self.refreshTimer()
-            } catch let error {
-                guard let e = error as? Error else {
-                    let unknownError = NSError(domain: "Unknown error", code: Int.max, userInfo: nil)
-                    self.delegate?.loginClientTokenRefreshDidFail(self, error: unknownError)
-                    return
-                }
-                self.delegate?.loginClientTokenRefreshDidFail(self, error: e.underlyingError)
+            } catch ParseErrorType.ParsingError(let code, let detail) {
+                let error = NSError(domain: GhostErrorDomain, code: code.rawValue, userInfo: [NSLocalizedDescriptionKey : detail])
+                self.delegate?.loginClientTokenRefreshDidFail(self, error: error)
+                return
+            } catch {
+                let error = NSError(domain: GhostErrorDomain, code: -1000, userInfo: [NSLocalizedDescriptionKey : "Unknown error"])
+                self.delegate?.loginClientTokenRefreshDidFail(self, error: error)
+                return
             }
         }
     }
     
     //MARK: User
-    
     public func getLoggedInUser(complete: GhostUserBlock) {
         guard let token = self.token?.accessToken else {
             return
         }
         
         self.manager.getCurrentlyLoggedInUser(token) { (results, error) in
-            guard results != nil else {
+            guard let results = results else {
                 complete(user: nil, error: error)
                 return
             }
             
             do {
-                let users = try self.userParser.parseUsersFromResponse(results!)
+                let users = try self.userParser.parseUsersFromResponse(results)
                 complete(user: users!.first, error: nil)
-            } catch let error {
-                guard let e = error as? Error else {
-                    let unknownError = NSError(domain: "Unknown error", code: Int.max, userInfo: nil)
-                    complete(user: nil, error: unknownError)
-                    return
-                }
-                complete(user: nil, error: e.underlyingError)
+            } catch ParseErrorType.ParsingError(let code, let detail) {
+                let error = NSError(domain: GhostErrorDomain, code: code.rawValue, userInfo: [NSLocalizedDescriptionKey : detail])
+                complete(user: nil, error: error)
+            } catch {
+                let error = NSError(domain: GhostErrorDomain, code: -1000, userInfo: [NSLocalizedDescriptionKey : "Unknown error"])
+                complete(user: nil, error: error)
             }
         }
     }

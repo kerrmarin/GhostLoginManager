@@ -18,17 +18,4 @@ public struct GhostLoginToken {
      *  the number of seconds after which this token will be invalid
      */
     public let expiry : Int
-    
-    /**
-     *  Instantiates an instance of GhostLoginToken.
-     *
-     *  @param accessToken the access token that is to be used to authenticate with the Ghost installation
-     *  @param expiry      the number of seconds after which this token will be invalid
-     *
-     *  @return a fully initialized GhostLoginToken
-     */
-    public init(token: String, expiry: Int) {
-        self.accessToken = token
-        self.expiry = expiry
-    }
 }

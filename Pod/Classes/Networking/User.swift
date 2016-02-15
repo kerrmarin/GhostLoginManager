@@ -27,7 +27,7 @@ enum User : URLRequestConvertible {
         let URLRequest = NSMutableURLRequest(URL: URL)
         URLRequest.HTTPMethod = "GET"
         URLRequest.addValue("application/json", forHTTPHeaderField: "Accept")
-        let encoding = Alamofire.ParameterEncoding.URL
+        let encoding = ParameterEncoding.URL
         
         return encoding.encode(URLRequest, parameters: result.parameters).0
     }
