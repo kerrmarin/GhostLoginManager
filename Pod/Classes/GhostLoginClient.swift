@@ -65,6 +65,13 @@ public class GhostLoginClient {
         }
     }
     
+    public func logout() {
+        self.token = nil
+        self.refreshToken = nil
+        self.timer?.invalidate()
+        self.timer = nil
+    }
+    
     // Extracts the tokens from a response
     private func extractTokensFromResponse(results: AnyObject) throws {
         self.token = try self.parser.tokenFromResponse(results)
